@@ -6,6 +6,8 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
+    position: absolute;
+    top: 0;
 }
 .header a {
     text-decoration: none;
@@ -14,13 +16,13 @@
 li:hover {
     text-decoration: underline;
 }
-}
-}
 .footer {
     list-style-type: none;
     margin: -10px;
     padding: 0;
     background-color: #f3f3f3;
+    position: absolute;
+    bottom: 0;
     }
 .footer a {
     text-decoration: none;
@@ -29,18 +31,36 @@ li:hover {
 li {
     display: inline;
 }
-#search {
+.searchbar {
     border-radius: 50px;
 }
 .search {
     background-color: #f3f3f3;
     border-color: #f3f3f3;
     }
+.center {
+  display: block;
+  margin: auto;
+  
+}
 </style>
 <body>
 
-<img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">
+<img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo" class="center">
 
+<input type="search" class="searchbar" name="searchbar">
+
+<div class="buttons">
+
+<button class="search" type="button">
+    Google Search
+</button>
+
+<button class="search" type="button">
+    I'm Feeling Lucky
+</button>
+
+</div>
 
 <div class="header">
 <ul>
@@ -52,17 +72,9 @@ li {
 </ul>  
 </div>
 
-<input type="search" id="search" name="searchbar">
 
-<div class="buttons">
-<button class="search" type="button">
-    Google Search
-</button>
 
-<button class="search" type="button">
-    I'm Feeling Lucky
-</button>
-</div>
+
 
 <div class="footer">
 <ul>
