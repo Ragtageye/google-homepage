@@ -4,10 +4,12 @@
 .header {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 14px 16px;
     text-decoration: none;
     position: absolute;
     top: 0;
+    text-align: center;
+    
 }
 .header a {
     text-decoration: none;
@@ -33,30 +35,44 @@ li {
 }
 .searchbar {
     border-radius: 50px;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    width: 300px;
+    text-align: center;
 }
 .search {
     background-color: #f3f3f3;
     border-color: #f3f3f3;
+    display: block;
+    margin: auto;
+    margin-top: 0px;
+    text-align: center;
+    flex-direction: column;
     }
 .center {
-  display: block;
-  margin: auto;
-  
+    display: block;
+    margin: auto;
+    margin-top: 150px;
+    width: 272px;
+    height: 90px;
+    text-align: center;
+ 
 }
 </style>
 <body>
 
 <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo" class="center">
 
-<input type="search" class="searchbar" name="searchbar">
+<input style="bottom: 10px;" type="search" class="searchbar" name="searchbar">
 
 <div class="buttons">
 
-<button class="search" type="button">
+<button style="position: relative; right: 69px;" class="search" type="button">
     Google Search
 </button>
 
-<button class="search" type="button">
+<button style="position: relative; left: 61px; bottom: 21px; " class="search" type="button">
     I'm Feeling Lucky
 </button>
 
@@ -71,9 +87,6 @@ li {
 <li style="float:right"><a href="#">Gmail</a></li>
 </ul>  
 </div>
-
-
-
 
 
 <div class="footer">
